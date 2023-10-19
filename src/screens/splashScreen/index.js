@@ -7,7 +7,7 @@ import useGetQuery from '../../hooks/getQuery.hook';
 import asyncStorageConstants from '../../constants/asyncStorageConstants';
 import {apiUrls} from '../../apis';
 import {SET_IS_ONBOARDED, SET_USER, SET_QUIZ} from '../../redux/commonActions';
-import {requestNotificationPermission} from '../../utils/notifications';
+// import {requestNotificationPermission} from '../../utils/notifications';
 // import {getQuziesFromJson} from '../../utils/functions';
 
 const SplashScreen = ({setShowSplash}) => {
@@ -64,7 +64,7 @@ const SplashScreen = ({setShowSplash}) => {
   }, []);
 
   useEffect(() => {
-    requestNotificationPermission();
+    // requestNotificationPermission();
     getUserInfo();
   }, [getUserInfo]);
 

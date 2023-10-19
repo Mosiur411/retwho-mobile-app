@@ -6,14 +6,12 @@ import {LogBox} from 'react-native';
 import Router from './src/routes';
 import 'react-native-gesture-handler';
 import {store} from './src/redux/store';
-import CodePushProvider from './src/components/codePush';
 
 LogBox.ignoreAllLogs();
 
 const App = () => (
   <SafeAreaProvider>
     <Provider store={store}>
-      <CodePushProvider />
       <Router />
       <Toast />
     </Provider>
